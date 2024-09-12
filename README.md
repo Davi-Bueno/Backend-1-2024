@@ -1,85 +1,59 @@
 # TODO.md
-# API de Vendas de Eletrodomésticos
 
-Esta API foi desenvolvida para gerenciar um sistema de vendas de eletrodomésticos, incluindo clientes, vendedores, produtos e carrinhos de compras.
+### What is TODO.md?
 
-## Tecnologias Utilizadas
+The TODO.md format is based on [GFM - GitHub Flavored Markdown - Task Lists](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown).
 
-- Node.js
-- Express.js
-- Prisma ORM
-- SQL Server
-- JWT para autenticação
+TODO.md is a file that contains tasks organized in multiple sections.
 
-## Estrutura do Projeto
+Tasks in TODO.md can be visualized using [Kanban Board](https://en.wikipedia.org/wiki/Kanban_board) where sections become columns on the board.
 
-O projeto está organizado da seguinte forma:
+### Why keep a TODO.md?
 
-- `API Back/`: Contém o código do backend
-  - `API-vendas/`: Diretório principal da API
-    - `controller/`: Controladores da aplicação
-    - `route/`: Rotas da API
-    - `utils/`: Utilitários e funções auxiliares
-  - `prisma/`: Configurações e schema do Prisma ORM
+For a project, there any many sources of information like Documentation, Issue forum, Wiki pages, etc. It is hard to find out about the current progress.
 
-- `API Front/`: Contém o código do frontend
-  - `src/`: Código-fonte do frontend
-    - `axios.js`: Configuração e funções de chamada à API
-    - `components/`: Componentes React reutilizáveis
-    - `containers/`: Componentes React que representam páginas ou seções maiores
-    - `theme/`: Configurações de tema da aplicação
+Keeping a TODO.md file makes it easier for anyone wants to know about the project's plans and work needs to be done.
 
-## Modelos de Dados
+### Why not using online management tools?
 
-A API utiliza os seguintes modelos de dados:
+Most often, a new project starts with a list of tasks to outline what needs to be done quickly. 
 
-1. Cliente
-2. Vendedor
-3. Eletrodoméstico
-4. Carrinho
-5. CarrinhoEletro (relação entre Carrinho e Eletrodoméstico)
+Although some online tools are useful to manage large projects efficiently, using them in early stages will add more effort and overhead for an MVP Product.
 
-## Funcionalidades Principais
+### TODO.md format
 
-- Autenticação de usuários (login/logout)
-- CRUD completo para Clientes, Vendedores, Eletrodomésticos e Carrinhos
-- Busca e filtragem de dados
-- Gestão de carrinhos de compras
+- TODO.md can have multiple columns.
+- Each column has tasks that start with a checkbox sign `- [ ]` or just a hyphen `- `
+- Completed column name must contain `✓` or `[x]`.
+- There are "2 spaces" at the end of every task title to serve as line breaks on Github pages.
+- Tags, mentions, estimate, date time, ticket id, etc. can be entered at the end of the task title.
+- A task with 2 space indentation in the title is a sub-task or description. 
 
-## Rotas da API
+```
+# Project Name
+Project Description
 
-A API possui as seguintes rotas principais:
+### Column Name
+- [ ] Task title ~3d #type @name yyyy-mm-dd  
+  - [ ] Sub-task or description  
 
-- `/login`: Autenticação de usuários
-- `/logout`: Finalização de sessão
-- `/eletro`: Operações relacionadas a eletrodomésticos
-- `/vendedor`: Operações relacionadas a vendedores
-- `/clientes`: Operações relacionadas a clientes
-- `/carrinhos`: Operações relacionadas a carrinhos de compras
-- `/carrinhos_Eletro`: Operações relacionadas à relação entre carrinhos e eletrodomésticos
+### Completed Column ✓
+- [x] Completed task title  
+```
 
-Todas as rotas (exceto login e logout) requerem autenticação via JWT.
+- Checkboxes are used as described in [GFM - GitHub Flavored Markdown - Task Lists](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown) but they are optional.
+- A task list without checkboxes look like this:
 
-## Configuração e Execução
+```
+### Column Name
+- Task title ~3d #type @name yyyy-mm-dd  
+  - Sub-task or description  
 
-1. Clone o repositório
-2. Instale as dependências: `npm install`
-3. Configure as variáveis de ambiente, incluindo a `DATABASE_URL` para conexão com o SQL Server
-4. Execute as migrações do Prisma: `npx prisma migrate dev`
-5. Inicie o servidor: `npm start`
+### Completed Column ✓
+- Completed task title  
+```
 
-## Documentação da API
+### See also
 
-A API utiliza Swagger para documentação. Acesse a rota `/api-docs` após iniciar o servidor para visualizar a documentação completa das rotas disponíveis.
-
-## Frontend
-
-O frontend da aplicação é desenvolvido em React e utiliza Material-UI para a interface do usuário. Ele se comunica com o backend através de chamadas axios e implementa as funcionalidades de CRUD para todas as entidades do sistema.
-
-## Contribuição
-
-Contribuições são bem-vindas! Por favor, abra uma issue para discutir mudanças maiores antes de submeter um pull request.
-
-## Licença
-
-[Inserir informações sobre a licença aqui]
+- [An example of TODO.md](TODO.md)
+- [Vscode Kanban Extension](https://bit.ly/2JcrUWJ)
