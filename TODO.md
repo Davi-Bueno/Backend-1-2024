@@ -1,26 +1,19 @@
-# TODO.md - API de Vendas de Eletrodomésticos
+# Example of TODO.md
 
-Este arquivo contém as tarefas relacionadas ao desenvolvimento da API de Vendas de Eletrodomésticos. 
+This is an example of TODO.md
+
+View the raw content of this file to understand the format.
 
 ### Todo
 
-- [ ] Implementar paginação nas rotas de busca ~2d #feat @devteam 2024-09-15  
-  - [ ] Criar middleware para paginação  
-  - [ ] Testar em `/eletro` e `/clientes`  
-- [ ] Configurar integração com Swagger para gerar documentação automática ~1d #doc @devteam  
-- [ ] Criar sistema de autenticação de vendedores ~3d #auth @devteam  
-  - [ ] Criar rota de login para vendedores  
-  - [ ] Implementar JWT para autenticação  
+- [ ] Work on the website ~3d #feat @john 2020-03-20  
+- [ ] Fix the homepage ~1d #bug @jane  
+  - [ ] Sub-task or description  
 
 ### In Progress
 
-- [ ] CRUD de Carrinhos de Compras ~2d #feat @devteam  
-  - [ ] Adicionar eletrodomésticos ao carrinho  
-  - [ ] Atualizar quantidade e remover itens  
+- [ ] Work on Github Repo [JIRA-345]  
 
 ### Done ✓
 
-- [x] Implementação de CRUD para eletrodomésticos  
-- [x] Configuração inicial do Prisma ORM  
-- [x] Autenticação JWT para usuários  
-- [x] Configuração do banco de dados no SQL Server  
+- [x] Create my first TODO.md  
